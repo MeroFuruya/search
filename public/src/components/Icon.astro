@@ -1,0 +1,30 @@
+---
+import "@fontsource-variable/material-symbols-outlined";
+
+export interface Props {
+  name: string;
+  size?: string; // e.g., '1', '1.5', '2'
+  color?: string;
+}
+
+const { name, size: scale = '1', color = 'currentColor' }: Props = Astro.props;
+---
+<span class="material-symbols-outlined" style={`font-size: calc(${scale} * 24px); color: ${color};`}>
+  {name}
+</span>
+
+<style>
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined Variable";
+  font-weight: normal;
+  font-style: normal;
+  /* font-size: 24px;  Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+</style>

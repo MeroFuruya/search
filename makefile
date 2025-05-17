@@ -1,6 +1,9 @@
 GO_BUILD_FLAGS :=
 GO_BUILD_STANDALONE_FLAGS := $(GO_BUILD_FLAGS) -tags=standalone
 
+run:
+	go run $(GO_BUILD_FLAGS) .
+
 build-public:
 	make -C public build
 
