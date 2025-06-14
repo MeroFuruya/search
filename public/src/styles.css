@@ -1,2 +1,6 @@
 @import "tailwindcss";
 @import "@fontsource-variable/roboto";
+
+body {
+  font-family: 'Roboto Variable', sans-serif;
+}
