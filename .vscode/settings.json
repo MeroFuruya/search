@@ -3,5 +3,6 @@
   "editor.indentSize": "tabSize",
   "editor.insertSpaces": true,
   "go.buildTags": "standalone",
-  "makefile.configureOnOpen": false
+  "makefile.configureOnOpen": false,
+  "editor.formatOnSave": true
 }
