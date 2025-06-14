@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "source": "src/index.html",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "clean:output": "rimraf dist",
+    "start": "npm run clean:output && parcel serve",
+    "build": "npm run clean:output && parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,8 +13,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@parcel/transformer-typescript-tsc": "^2.15.1",
+    "@tailwindcss/postcss": "^4.1.10",
     "parcel": "^2.15.1",
-    "typescript": "^5.8.3"
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^4.1.10"
+  },
+  "dependencies": {
+    "@fontsource-variable/roboto": "^5.2.6"
   }
 }
