@@ -1,0 +1,9 @@
+node_modules/
+dist/
+
+# Logs
+logs
+npm-debug.log*
+
+# parcel
+.parcel-cache/

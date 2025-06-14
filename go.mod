@@ -4,6 +4,7 @@ go 1.22.4
 
 require (
 	github.com/alexflint/go-arg v1.5.1
+	github.com/evanw/esbuild v0.25.4
 	github.com/go-chi/chi/v5 v5.2.1
 	github.com/go-chi/cors v1.2.1
 	github.com/rs/zerolog v1.33.0
